@@ -1,0 +1,9 @@
+/* Ensure toggler is fixed for small and medium devices */
+@media (max-width: 992px) { /* Adjust this value as per your design requirements */
+    .toggler-icon {
+      position: fixed;
+      top: 15px; /* Keeps it at the top */
+      right: 15px; /* Fixes it to the right */
+      z-index: 999; /* Places it above other elements */
+    }
+  }
