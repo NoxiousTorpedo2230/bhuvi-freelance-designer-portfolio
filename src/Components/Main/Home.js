@@ -21,7 +21,7 @@ const Home = ({ handleScroll }) => {
         ))}
       </div>
 
-      <Container fluid style={{ position: "relative", zIndex: 1 }}>
+      <Container style={{ position: "relative", zIndex: 1 }}>
         <Row className="justify-content-center text-center">
           <Col lg={9} md={12}>
             <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} style={{ display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center", marginBottom: "5px"}}>
