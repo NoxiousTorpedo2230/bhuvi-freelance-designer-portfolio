@@ -26,7 +26,7 @@ const Home = ({ handleScroll }) => {
           <Col lg={9} md={12}>
             <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} style={{ display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center", marginBottom: "5px"}}>
               
-              <motion.div initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ duration: 0.6, delay: 0.2 }} style={{ padding: "15px 30px", background: "rgba(0, 77, 102, 0.1)", borderRadius: "50px", marginBottom: "20px"}}>
+              <motion.div initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ duration: 0.6, delay: 0.2 }} style={{ padding: "15px 30px", background: "rgba(0, 77, 102, 0.1)", borderRadius: "50px", marginBottom: "20px", marginTop:'40px'}}>
                 <span style={{ color: "#004d66", fontWeight: "500" }}>Graphic Designer</span>
               </motion.div>
 
