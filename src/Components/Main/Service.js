@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { motion } from "framer-motion";
-import {  FaPalette, FaFileAlt, FaBookOpen, FaShareAlt,FaShapes ,FaBox} from "react-icons/fa";
+import { FaPalette, FaFileAlt, FaBookOpen, FaShareAlt, FaShapes, FaBox } from "react-icons/fa";
 import ObserverWrapper from "./ObserverWrapper";
 
 const Service = () => {
@@ -14,35 +14,35 @@ const Service = () => {
   // Services data
   const servicesData = [
     {
-      icon: <FaPalette />, 
+      icon: <FaPalette />,
       title: "Brand Design",
-      description: "Crafting cohesive brand identities, including logos, typography, color schemes, and branding materials."
+      description: "Crafting cohesive brand identities, including logos, typography, color schemes, and branding materials.",
     },
     {
-      icon: <FaFileAlt />, // Represents documents for Flyers
+      icon: <FaFileAlt />,
       title: "Flyers",
-      description: "Designing attention-grabbing flyers tailored to your promotional needs and target audience."
+      description: "Designing attention-grabbing flyers tailored to your promotional needs and target audience.",
     },
     {
-      icon: <FaBookOpen />, // Represents brochures and catalogs
+      icon: <FaBookOpen />,
       title: "Brochures",
-      description: "Creating visually compelling brochures that conveys your message and showcase your offerings."
+      description: "Creating visually compelling brochures that convey your message and showcase your offerings.",
     },
     {
-      icon: <FaShareAlt />, // Represents social media sharing
+      icon: <FaShareAlt />,
       title: "Social Media Posts & Ads",
-      description: "Designing engaging social media posts and ads that resonate with your audience and increase reach."
+      description: "Designing engaging social media posts and ads that resonate with your audience and increase reach.",
     },
     {
-      icon: <FaShapes />, // Represents design and thumbnails
+      icon: <FaShapes />,
       title: "Logo Design & Thumbnails",
-      description: "Innovative logo designs and custom thumbnails that establish your visual identity and attract attention."
+      description: "Innovative logo designs and custom thumbnails that establish your visual identity and attract attention.",
     },
     {
-      icon: <FaBox />, // Represents packaging for Product Packaging Design
+      icon: <FaBox />,
       title: "Product Packaging Design",
-      description: "Designing attractive and functional product packaging that elevates your brand and stands out on shelves."
-    }
+      description: "Designing attractive and functional product packaging that elevates your brand and stands out on shelves.",
+    },
   ];
 
   return (
@@ -50,10 +50,10 @@ const Service = () => {
       <div
         id="services"
         style={{
-          backgroundColor: "#e6f7ff",
-          color: "#004d66",
+          backgroundColor: "#1A2841",
+          color: "#E6F2FF",
           minHeight: "100vh",
-          padding: "80px 0"
+          padding: "80px 0",
         }}
       >
         <Container>
@@ -61,19 +61,26 @@ const Service = () => {
             variants={fadeInAnimation}
             style={{
               textAlign: "center",
-              marginBottom: "40px"
+              marginBottom: "40px",
             }}
           >
             <h1
               style={{
                 fontSize: "3rem",
                 fontWeight: "bold",
-                color: "#004d66"
+                color: "#E6F2FF",
               }}
             >
               My Services
             </h1>
-            <p style={{ fontSize: "1.2rem", maxWidth: "800px", margin: "0 auto", color: "#004d66" }}>
+            <p
+              style={{
+                fontSize: "1.2rem",
+                maxWidth: "800px",
+                margin: "0 auto",
+                color: "#E6F2FF",
+              }}
+            >
               Comprehensive design solutions to meet your creative and business needs
             </p>
           </motion.div>
@@ -83,43 +90,43 @@ const Service = () => {
               <Col lg={4} md={6} className="mb-4" key={index}>
                 <motion.div
                   variants={fadeInAnimation}
-                  whileHover={{ 
-                    y: -10, 
-                    boxShadow: "0 10px 20px rgba(0, 77, 102, 0.15)" 
+                  whileHover={{
+                    y: -10,
+                    boxShadow: "0 10px 20px rgba(230, 242, 255, 0.15)",
                   }}
                 >
-                  <Card 
-                    style={{ 
-                      border: "none", 
-                      borderRadius: "15px", 
+                  <Card
+                    style={{
+                      border: "none",
+                      borderRadius: "15px",
                       overflow: "hidden",
                       height: "100%",
-                      backgroundColor: "#fff",
-                      transition: "all 0.3s ease"
+                      backgroundColor: "#E6F2FF",
+                      transition: "all 0.3s ease",
                     }}
                   >
                     <Card.Body className="text-center p-4">
-                      <div 
-                        style={{ 
-                          fontSize: "2.5rem", 
-                          color: "#004d66", 
+                      <div
+                        style={{
+                          fontSize: "2.5rem",
+                          color: "#1A2841",
                           margin: "15px 0",
-                          transition: "transform 0.3s ease"
+                          transition: "transform 0.3s ease",
                         }}
                       >
                         {service.icon}
                       </div>
-                      <Card.Title 
-                        style={{ 
-                          fontSize: "1.4rem", 
-                          fontWeight: "600", 
-                          color: "#004d66",
-                          marginBottom: "15px" 
+                      <Card.Title
+                        style={{
+                          fontSize: "1.4rem",
+                          fontWeight: "600",
+                          color: "#1A2841",
+                          marginBottom: "15px",
                         }}
                       >
                         {service.title}
                       </Card.Title>
-                      <Card.Text style={{ color: "#004d66" }}>
+                      <Card.Text style={{ color: "#1A2841" }}>
                         {service.description}
                       </Card.Text>
                     </Card.Body>
@@ -133,12 +140,12 @@ const Service = () => {
             <Col md={10} lg={8}>
               <motion.div
                 variants={fadeInAnimation}
-                style={{ 
-                  backgroundColor: "#004d66", 
-                  padding: "40px", 
+                style={{
+                  backgroundColor: "#E6F2FF",
+                  padding: "40px",
                   borderRadius: "15px",
                   textAlign: "center",
-                  color: "#e6f7ff"
+                  color: "#1A2841",
                 }}
               >
                 <h3 style={{ fontWeight: "600", marginBottom: "20px" }}>
@@ -152,14 +159,14 @@ const Service = () => {
                   whileHover={{ scale: 1.05 }}
                   style={{
                     display: "inline-block",
-                    backgroundColor: "#e6f7ff",
-                    color: "#004d66",
+                    backgroundColor: "#1A2841",
+                    color: "#E6F2FF",
                     padding: "12px 30px",
                     borderRadius: "50px",
                     textDecoration: "none",
                     fontWeight: "600",
                     fontSize: "1rem",
-                    transition: "all 0.3s ease"
+                    transition: "all 0.3s ease",
                   }}
                 >
                   Get in Touch
