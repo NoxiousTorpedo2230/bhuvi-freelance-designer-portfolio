@@ -54,7 +54,7 @@ const Contact = () => {
     <ObserverWrapper animation={fadeInAnimation}>
       <div
         id="contact"
-        style={{ backgroundColor: "#fff", color: "#004d66", minHeight: "100vh", padding: "70px 0", position: "relative", overflow: "hidden",}}>
+        style={{ backgroundColor: "#E6F2FF", color: "#1A2841", minHeight: "100vh", padding: "70px 0", position: "relative", overflow: "hidden",}}>
 
         <div style={{ position: "absolute", top: 0, right: 0, opacity: 0.1, zIndex: 0,}}>
           <svg width="500" height="500" viewBox="0 0 200 200">
@@ -70,20 +70,20 @@ const Contact = () => {
 
         <Container style={{ position: "relative", zIndex: 1 }}>
           <motion.div variants={fadeInAnimation} style={{ textAlign: "center", marginBottom: "50px" }}>
-            <h1 style={{ fontSize: "3rem", fontWeight: "bold", color: "#004d66" }}>
+            <h1 style={{ fontSize: "3rem", fontWeight: "bold", color: "#1A2841" }}>
               Contact Me
             </h1>
 
-            <p style={{ fontSize: "1.2rem", maxWidth: "800px", margin: "0 auto", color: "#004d66",}}>
+            <p style={{ fontSize: "1.2rem", maxWidth: "800px", margin: "0 auto", color: "#1A2841",}}>
               Let's discuss how I can bring your design ideas to life
             </p>
           </motion.div>
 
           <Row className="justify-content-center">
-            <Col lg={5} md={6} className="mb-4">
-              <motion.div variants={containerAnimation} whileHover={{ transform: "translateY(-5px)" }} style={{backgroundColor: "#e6f7ff", borderRadius: "15px", padding: "40px", height: "100%", boxShadow: "0 10px 30px rgba(0, 77, 102, 0.1)", transition:"transform 0.3s ease",}}>
+            <Col lg={5} md={12} sm={12} className="mb-4">
+              <motion.div variants={containerAnimation} whileHover={{ transform: "translateY(-5px)" }} style={{backgroundColor: "#1A2841", borderRadius: "15px", padding: "40px", height: "100%", boxShadow: "0 10px 30px rgba(0, 77, 102, 0.1)", transition:"transform 0.3s ease",}}>
                 <motion.div variants={fadeInAnimation}>
-                  <h2 style={{ fontSize: "1.8rem", fontWeight: "600", color: "#004d66", marginBottom: "30px", }}>
+                  <h2 style={{ fontSize: "1.8rem", fontWeight: "600", color: "#E6F2FF", marginBottom: "30px", }}>
                     Get In Touch
                   </h2>
 
@@ -96,8 +96,8 @@ const Contact = () => {
                       <motion.div key={index} whileHover={{ x: 5 }} style={{ display: "flex", alignItems: "center", marginBottom: "20px", transition: "transform 0.3s ease",}}>
                         <div
                           style={{
-                            backgroundColor: "#004d66",
-                            color: "#e6f7ff",
+                            backgroundColor: "#E6F2FF",
+                            color: "#1A2841",
                             width: "45px",
                             height: "45px",
                             borderRadius: "50%",
@@ -116,13 +116,13 @@ const Contact = () => {
                             style={{
                               fontSize: "1.1rem",
                               fontWeight: "600",
-                              color: "#004d66",
+                              color: "#E6F2FF",
                               margin: 0,
                             }}
                           >
                             {item.title}
                           </h4>
-                          <p style={{ margin: "5px 0 0 0", color: "#004d66" }}>
+                          <p style={{ margin: "5px 0 0 0", color: "#E6F2FF" }}>
                             {item.text}
                           </p>
                         </div>
@@ -136,10 +136,10 @@ const Contact = () => {
                   style={{
                     marginTop: "0px",
                     background:
-                      "linear-gradient(135deg, #004d66 0%, #006b8f 100%)",
+                      "#E6F2FF",
                     borderRadius: "10px",
                     padding: "20px",
-                    color: "#e6f7ff",
+                    color: "#1A2841",
                     textAlign: "center",
                     boxShadow: "0 10px 20px rgba(0, 77, 102, 0.15)",
                     transition: "transform 0.3s ease",
@@ -177,12 +177,12 @@ const Contact = () => {
               </motion.div>
             </Col>
 
-            <Col lg={7} md={6}>
+            <Col lg={7} md={12} sm={12}>
               <motion.div
                 variants={containerAnimation}
                 whileHover={{ transform: "translateY(-5px)" }}
                 style={{
-                  backgroundColor: "#e6f7ff",
+                  backgroundColor: "#1A2841",
                   borderRadius: "15px",
                   padding: "40px",
                   boxShadow: "0 10px 30px rgba(0, 77, 102, 0.1)",
@@ -194,7 +194,7 @@ const Contact = () => {
                     style={{
                       fontSize: "1.8rem",
                       fontWeight: "600",
-                      color: "#004d66",
+                      color: "#E6F2FF",
                       marginBottom: "30px",
                     }}
                   >
@@ -206,7 +206,7 @@ const Contact = () => {
                       <Col md={6} className="mb-3">
                         <Form.Group>
                           <Form.Label
-                            style={{ color: "#004d66", fontWeight: "500" }}
+                            style={{ color: "#E6F2FF", fontWeight: "500" }}
                           >
                             Your Name
                           </Form.Label>
@@ -233,7 +233,7 @@ const Contact = () => {
                                 left: "15px",
                                 top: "50%",
                                 transform: "translateY(-50%)",
-                                color: "#004d66",
+                                color: "#1A2841",
                               }}
                             />
                           </div>
@@ -243,7 +243,7 @@ const Contact = () => {
                       <Col md={6} className="mb-3">
                         <Form.Group>
                           <Form.Label
-                            style={{ color: "#004d66", fontWeight: "500" }}
+                            style={{ color: "#E6F2FF", fontWeight: "500" }}
                           >
                             Your Email
                           </Form.Label>
@@ -270,7 +270,7 @@ const Contact = () => {
                                 left: "15px",
                                 top: "50%",
                                 transform: "translateY(-50%)",
-                                color: "#004d66",
+                                color: "#1A2841",
                               }}
                             />
                           </div>
@@ -280,7 +280,7 @@ const Contact = () => {
 
                     <Form.Group className="mb-3">
                       <Form.Label
-                        style={{ color: "#004d66", fontWeight: "500" }}
+                        style={{ color: "#E6F2FF", fontWeight: "500" }}
                       >
                         Subject
                       </Form.Label>
@@ -303,7 +303,7 @@ const Contact = () => {
 
                     <Form.Group className="mb-4">
                       <Form.Label
-                        style={{ color: "#004d66", fontWeight: "500" }}
+                        style={{ color: "#E6F2FF", fontWeight: "500" }}
                       >
                         Your Message
                       </Form.Label>
@@ -333,7 +333,7 @@ const Contact = () => {
                         type="submit"
                         style={{
                           background:
-                            "linear-gradient(135deg, #004d66 0%, #006b8f 100%)",
+                            "#E6F2FF",
                           border: "none",
                           padding: "12px 30px",
                           borderRadius: "50px",
@@ -345,8 +345,8 @@ const Contact = () => {
                           boxShadow: "0 10px 20px rgba(0, 77, 102, 0.2)",
                         }}
                       >
-                        <span>Send Message</span>
-                        <FontAwesomeIcon icon={faPaperPlane} />
+                        <span style={{color:"#1A2841"}}>Send Message</span>
+                        <FontAwesomeIcon style={{color:"#1A2841"}} icon={faPaperPlane} />
                       </Button>
                     </motion.div>
                   </Form>
@@ -361,7 +361,7 @@ const Contact = () => {
                     backgroundColor: "rgba(0, 77, 102, 0.05)",
                     border: "1px dashed rgba(0, 77, 102, 0.2)",
                     textAlign: "center",
-                    color: "#004d66",
+                    color: "#E6F2FF",
                   }}
                 >
                   <p style={{ margin: 0, fontSize: "0.9rem" }}>
