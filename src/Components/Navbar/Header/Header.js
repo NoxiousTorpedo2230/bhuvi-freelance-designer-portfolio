@@ -89,7 +89,7 @@ const Header = ({ handleScroll }) => {
           display: block;
           width: 100%;
           height: 3px;
-          background-color: #2ECC71;
+          background-color: #E6F2FF;
           border-radius: 2px;
           transition: transform 0.3s ease, background-color 0.3s ease;
         }
