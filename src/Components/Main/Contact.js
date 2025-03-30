@@ -85,7 +85,7 @@ const Contact = () => {
           </motion.div>
 
           <Row className="g-4">
-            <Col xs={12} md={5}>
+            <Col xs={12} sm={12} md={12} lg={5}>
               <motion.div 
                 variants={containerAnimation} 
                 style={{
@@ -213,7 +213,7 @@ const Contact = () => {
               </motion.div>
             </Col>
 
-            <Col xs={12} md={7}>
+            <Col xs={12} sm={12} md={12} lg={7}>
               <motion.div
                 variants={containerAnimation}
                 style={{
