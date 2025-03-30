@@ -70,6 +70,11 @@ const About = () => {
       title: "Instagram Posters",
       description: "Designing print materials that blend aesthetic appeal with clear, compelling communication across various mediums.",
       images: projectImages[2].images
+    },
+    {
+      title: "Client Work Brochure",
+      description: "Showcasing custom-tailored designs that encapsulate your brand's story. These brochures are crafted to inform, impress, and inspire action.",
+      images: projectImages[3].images
     }
   ];
 
@@ -138,7 +143,7 @@ const About = () => {
               <Container style={{ marginTop: "50px" }}>
                 <Row>
                   {projectDetails.map((project, index) => (
-                    <Col lg={4} md={6} sm={12} key={index} className="mb-4">
+                    <Col lg={3} md={6} sm={12} key={index} className="mb-4">
                       <motion.div style={{
                           backgroundColor: "#1A2841",
                           color: "#E6F2FF",
